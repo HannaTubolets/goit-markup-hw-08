@@ -71,6 +71,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -753,11 +754,11 @@ img {
 }
 .works__img {
   display: block;
+  width: 100%;
 }
 .works__item {
   position: relative;
   background: var(--primary-bg-color);
-  width: calc((100% - 40px) / 3);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
