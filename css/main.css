@@ -71,7 +71,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .visually-hidden {
@@ -351,17 +350,16 @@ img {
 }
 
 .mob-soc-list {
+  position: relative;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding: 0 10px;
-  border-right: 1px;
-  border-color: var(--secondary-text-color);
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
+  justify-content: flex-start;
 }
 
 .logo,
@@ -397,10 +395,35 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero__overlay .box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-mob.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay .box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1px-desk.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay .box {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero2px-desk.jpg);
+  }
 }
 .hero__title {
   font-weight: 900;
@@ -624,8 +647,15 @@ img {
   }
 }
 
-.team__info {
-  padding: 30px 24px;
+@media screen and (min-width: 480px) {
+  .team__info {
+    padding: 30px 24px 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__info {
+    padding: 30px 24px;
+  }
 }
 
 .social-links {

@@ -85,12 +85,6 @@
   }
 }
 
-// .contact-nav {
-//     @media screen and (min-width: 768px) and (max-width: 1199px) {
-// display: inline-flex;
-//     }
-// }
-
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -220,17 +214,24 @@
 }
 
 .mob-soc-list {
+  position: relative;
   font-size: 18px;
   font-weight: 500;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  padding: 0 10px;
-  border-right: 1px;
-  border-color: var(--secondary-text-color);
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
+  justify-content: flex-start;
 }
+
+// .mob-soc-list__link::before {
+//   content: "";
+//   width: 2px;
+//   height: 22px;
+//   color: rgba(33, 33, 33, 0.2);
+//   position: absolute;
+// }
 
 // Mob Menu
