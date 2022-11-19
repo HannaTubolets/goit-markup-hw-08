@@ -392,6 +392,7 @@ img {
 
 .mob-soc-list__link--no-border {
   color: var(--accent-color);
+  border-left: none;
 }
 
 .mob-menu-contacts {
