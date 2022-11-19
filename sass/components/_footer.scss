@@ -82,7 +82,7 @@
 
 .join-block,
 .footer-nav {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin-bottom: 60px;
     text-align: center;
   }
@@ -168,19 +168,19 @@
 }
 
 .footer-btn {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin-top: 20px;
   }
 }
 
 .subscribe {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     text-align: center;
   }
 }
 
 .footer-inputs > .footer-email {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     width: 100%;
   }
 
@@ -190,7 +190,7 @@
 }
 
 .footer-tablet {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
   }
