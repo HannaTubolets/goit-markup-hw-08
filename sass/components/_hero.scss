@@ -2,6 +2,10 @@
   &__section {
     text-align: center;
     padding: 200px 0;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      padding: 118px 0;
+    }
   }
   &__overlay {
     max-width: 1600px;
@@ -17,6 +21,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      height: 400px;
+    }
 
     @include mobile {
       @include retina {
@@ -73,6 +81,11 @@
     color: var(--white-color);
     margin: 0 auto 30px;
 
+    @media screen and (min-width: 320px) {
+      font-size: 24px;
+      line-height: 1.6;
+    }
+
     @media screen and (min-width: 480px) {
       font-size: 26px;
       line-height: 1.6;
@@ -103,6 +116,7 @@
     cursor: pointer;
     display: block;
     margin: 0 auto;
+
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(
@@ -112,7 +126,7 @@
       1
     );
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 320px) {
       padding: 10px 24px;
       min-width: 200px;
     }
