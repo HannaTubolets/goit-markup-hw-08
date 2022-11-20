@@ -28,7 +28,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link
+      rel="stylesheet"
+      href="./css/main.min.css"
+    />
     <!-- <link
       rel="stylesheet"
       href="css/styles.css"
@@ -36,7 +39,7 @@
   </head>
 
   <body>
-  <!--Header-->
+    <!--Header-->
     <header class="page-header">
       <nav class="container main-nav">
         <a class="logo" href="./index.html">
@@ -114,7 +117,7 @@
         </button>
       </nav>
 
-           <!-- Mob Menu -->
+      <!-- Mob Menu -->
       <div class="mob-menu is-hidden" data-menu>
         <div class="container-mob-menu">
           <div class="mob-menu-top">
@@ -175,7 +178,7 @@
               <li class="mob-soc-list__item">
                 <a
                   href=""
-                  class="mob-soc-list__link link"
+                  class="mob-soc-list__link no-border link"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                 >
@@ -224,6 +227,7 @@
       <section class="section">
         <div class="container">
           <h1 hidden>Наші роботи</h1>
+
           <ul class="list btn-list">
             <li class="item">
               <button
@@ -269,66 +273,75 @@
 
           <ul class="list works works__list">
             <li class="works__item">
-              <div class="works__wrapper">
-                <img
-                  class="works__img"
-                  src="./images/img-2-1.jpg"
-                  alt="Монітор -ноутбука-з-трьома картками"
-                  width="370"
-                />
-                <div class="works__overlay">
-                  <p class="works__overlay-txt">
-                    Ресурс пропонує комплексні
-                    пропозиції з різним рівнем
-                    функціоналу та сервісів. Все
-                    це дозволить відвідувачу
-                    отримати вичерпні відомості
-                    про компанію чи приватну
-                    особу.
+              <div class="works__content-wrapper">
+                <div class="works__wrapper">
+                  <img
+                    class="works__img"
+                    src="./images/img-2-1.jpg"
+                    alt="Монітор -ноутбука-з-трьома картками"
+                    width="370"
+                  />
+                  <div class="works__overlay">
+                    <p class="works__overlay-txt">
+                      Ресурс пропонує комплексні
+                      пропозиції з різним рівнем
+                      функціоналу та сервісів. Все
+                      це дозволить відвідувачу
+                      отримати вичерпні відомості
+                      про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="works__info">
+                  <h2 class="works__title">
+                    Постер
+                    <span lang="en"
+                      >New Orlean vs Golden
+                      Star</span
+                    >
+                  </h2>
+                  <p class="works__kind">
+                    Дизайн
                   </p>
                 </div>
-              </div>
-              <div class="works__info">
-                <h2 class="works__title">
-                  Постер
-                  <span lang="en"
-                    >New Orlean vs Golden
-                    Star</span
-                  >
-                </h2>
-                <p class="works__kind">Дизайн</p>
               </div>
             </li>
             <li class="works__item">
-              <div class="works__wrapper">
-                <img
-                  class="works__img"
-                  src="./images/img-2-2.jpg"
-                  alt="Два-баскітболісти-з-м'ячем"
-                  width="370"
-                />
-                <div class="works__overlay">
-                  <p class="works__overlay-txt">
-                    Ресурс пропонує комплексні
-                    пропозиції з різним рівнем
-                    функціоналу та сервісів. Все
-                    це дозволить відвідувачу
-                    отримати вичерпні відомості
-                    про компанію чи приватну
-                    особу.
+              <div class="works__content-wrapper">
+                <div class="works__wrapper">
+                  <img
+                    class="works__img"
+                    src="./images/img-2-2.jpg"
+                    alt="Два-баскітболісти-з-м'ячем"
+                    width="370"
+                  />
+                  <div class="works__overlay">
+                    <p class="works__overlay-txt">
+                      Ресурс пропонує комплексні
+                      пропозиції з різним рівнем
+                      функціоналу та сервісів. Все
+                      це дозволить відвідувачу
+                      отримати вичерпні відомості
+                      про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="works__info">
+                  <h2 class="works__title">
+                    Ресторан
+                    <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="works__kind">
+                    Додаток
                   </p>
                 </div>
-              </div>
-              <div class="works__info">
-                <h2 class="works__title">
-                  Ресторан
-                  <span lang="en">Seafood</span>
-                </h2>
-                <p class="works__kind">Додаток</p>
               </div>
             </li>
 
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -353,10 +366,14 @@
                   Проєкт
                   <span lang="en">Prime</span>
                 </h2>
-                <p class="works__kind">Маркетинг</p>
+                <p class="works__kind">
+                  Маркетинг
+                </p>
+              </div>
               </div>
             </li>
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -383,8 +400,10 @@
                 </h2>
                 <p class="work__kind">Додаток</p>
               </div>
+              </div>
             </li>
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -405,13 +424,20 @@
                 </div>
               </div>
               <div class="works__info">
-                <h2 class="works__title" lang="en">
+                <h2
+                  class="works__title"
+                  lang="en"
+                >
                   Inspiration has no Borders
                 </h2>
-                <p class="works__kind">Веб-сайт</p>
+                <p class="works__kind">
+                  Веб-сайт
+                </p>
+              </div>
               </div>
             </li>
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -440,8 +466,10 @@
                 </h2>
                 <p class="works__kind">Дизайн</p>
               </div>
+              </div>
             </li>
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -466,10 +494,14 @@
                   Проєкт
                   <span lang="en">LAB</span>
                 </h2>
-                <p class="work__kind">Маркетинг</p>
+                <p class="work__kind">
+                  Маркетинг
+                </p>
+              </div>
               </div>
             </li>
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -493,10 +525,14 @@
                 <h2 class="works__title">
                   Технокряк
                 </h2>
-                <p class="works__kind">Веб-сайт</p>
+                <p class="works__kind">
+                  Веб-сайт
+                </p>
+              </div>
               </div>
             </li>
             <li class="works__item">
+              <div class="works__content-wrapper">
               <div class="works__wrapper">
                 <img
                   class="works__img"
@@ -517,10 +553,14 @@
                 </div>
               </div>
               <div class="works__info">
-                <h2 class="works__title" lang="en">
+                <h2
+                  class="works__title"
+                  lang="en"
+                >
                   Growing Business
                 </h2>
                 <p class="works__kind">Додаток</p>
+              </div>
               </div>
             </li>
           </ul>
@@ -679,6 +719,6 @@
         </div>
       </div>
     </footer>
-        <script src="./js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
